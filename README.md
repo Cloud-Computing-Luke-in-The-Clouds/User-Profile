@@ -45,9 +45,10 @@
    ```
    sudo docker run -d -p 8002:8002 matching-service
    ```
-4. Stop Docker
+4. Restart Docker 
    ```
-   sudo docker stop matching-service
+   sudo service docker stop
+   sudo service docker start
    ```
 
 Choose the method that best suits your needs and environment.
