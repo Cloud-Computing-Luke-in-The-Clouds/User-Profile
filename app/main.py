@@ -11,7 +11,6 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 
 # Local application imports
-from app.routers import generate_ranking
 from framework.services.data_access.MySQLRDBDataService import MySQLRDBDataService
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -57,7 +56,7 @@ app.add_middleware(
 )
 
 # Include routers
-app.include_router(generate_ranking.router)
+#app.include_router(generate_ranking.router)
 
 @app.on_event("startup")
 async def startup_event():
