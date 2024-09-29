@@ -1,5 +1,6 @@
 # Researcher-Profile
+sudo apt install docker.io
 
-docker build -t user-profile .
+sudo docker build -t user-profile .
 
-docker run -d -p 8002:8002 user-profile
+sudo docker run -d -p 8002:8002 user-profile
